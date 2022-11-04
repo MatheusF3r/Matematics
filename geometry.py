@@ -27,7 +27,9 @@ class Triangle:
 					break
 		else:
 			return squareRoot
-	
+
+
+
 a = (2,2)
 b = (-4,-6)
 c = (4,-12)

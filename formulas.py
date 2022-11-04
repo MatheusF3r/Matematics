@@ -23,3 +23,4 @@ class Mathematics:
 	                None
 	    else:
 	        return squareRoot
+	        
