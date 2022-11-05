@@ -28,6 +28,14 @@ class Triangle:
 		else:
 			return squareRoot
 
+	def triangleType(valueA,valueB,valueC):
+		if valueA == valueB == valueC:
+			return "Triangulo equilatero"
+		elif valueA != valueB and valueA != valueC and valueB != valueC:
+			return "Triangulo escaleno"
+		else:
+			return "Triangulo isoceles"
+
 
 
 a = (2,2)
@@ -38,5 +46,11 @@ ab = Triangle.calcusSide(a,b) # 10
 bc = Triangle.calcusSide(b,c) # 10
 ca = Triangle.calcusSide(c,a) # Raiz quadrada de 200 = raiz de 100 * 2 = 10 raiz de 2
 
-print('Lado AB: {} \n Lado BC: {} \n LADO AC: {} \n'.format(ab,bc,ca))
+values = (ab,bc,ca)
+typeTriangle = Triangle.triangleType(values[0],values[1],values[2])
 
+print("O triangulo é do tipo {} de acordo com as medidas ab {}, bc {}, ca {}".format(typeTriangle,ab,bc,ca))
+
+
+
+#print('Lado AB: {} \n Lado BC: {} \n LADO AC: {} \n'.format(ab,bc,ca))
